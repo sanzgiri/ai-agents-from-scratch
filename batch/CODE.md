@@ -140,17 +140,6 @@ console.log("AI: " + a2);
 - Outputs both question-answer pairs
 - Results appear in order despite parallel processing
 
-### Why No Cleanup?
-
-Notice there's no `dispose()` calls at the end. In a production system, you should add:
-```javascript
-llama.dispose();
-model.dispose();
-context.dispose();
-session1.dispose();
-session2.dispose();
-```
-
 ## Key Concepts Demonstrated
 
 ### 1. Parallel Processing
@@ -186,18 +175,6 @@ A context can hold multiple independent sequences:
 │  │ History...  │  │ History...  │  │
 │  └─────────────┘  └─────────────┘  │
 └─────────────────────────────────────┘
-```
-
-### 3. Batch Processing
-The `batchSize` parameter optimizes GPU usage:
-
-```
-Without batching:      With batching (1024 tokens):
-Token → GPU           Tokens 1-1024 → GPU
-Token → GPU           (Single batch)
-Token → GPU           
-...                   Much faster!
-(Inefficient)
 ```
 
 ## Performance Comparison

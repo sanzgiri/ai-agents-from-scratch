@@ -48,3 +48,9 @@ console.log("AI: " + a1);
 
 console.log("User: " + q2);
 console.log("AI: " + a2);
+
+llama.dispose();
+model.dispose();
+context.dispose();
+session1.dispose();
+session2.dispose();
