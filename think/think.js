@@ -1,7 +1,6 @@
 import {
     getLlama,
     LlamaChatSession,
-    QwenChatWrapper
 } from "node-llama-cpp";
 import {fileURLToPath} from "url";
 import path from "path";
@@ -12,6 +11,7 @@ const llama = await getLlama();
 const model = await llama.loadModel({
     modelPath: path.join(
         __dirname,
+        "../",
         "models",
         "Qwen3-1.7B-Q6_K.gguf"
     )
@@ -25,9 +25,7 @@ const systemPrompt = `You are an expert logical and quantitative reasoner.
 const context = await model.createContext();
 const session = new LlamaChatSession({
     contextSequence: context.getSequence(),
-    chatWrapper: new QwenChatWrapper({
-        keepOnlyLastThought: true
-    })
+    systemPrompt
 });
 
 const prompt = `My family reunion is this week, and I was assigned the mashed potatoes to bring. 
@@ -41,26 +39,8 @@ second cousins don't eat carbs. The average potato is about half a pound, and po
 How many whole bags of potatoes do I need? 
 `;
 
-/*
-let fullText = "";
-await session.prompt(prompt, {
-    onToken: (token) => {
-        const text = Array.isArray(token) ? token.join("") : token;
-        process.stdout.write(text);
-        fullText += text;
-    },
-});
-
- */
-const start = process.hrtime.bigint();
-
 const answer = await session.prompt(prompt);
-
-const end = process.hrtime.bigint();
-const elapsed = Number(end - start) / 1e9;
-
 console.log(`AI: ${answer}`);
-console.log(`⏱️ Elapsed time: ${elapsed.toFixed(3)}s`);
 
 llama.dispose()
 model.dispose()

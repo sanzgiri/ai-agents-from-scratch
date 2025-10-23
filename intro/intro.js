@@ -1,6 +1,6 @@
 import {
-    getLlama, resolveModelFile, LlamaChatSession,
-    HarmonyChatWrapper
+    getLlama,
+    LlamaChatSession,
 } from "node-llama-cpp";
 import {fileURLToPath} from "url";
 import path from "path";
@@ -12,6 +12,7 @@ const llama = await getLlama();
 const model = await llama.loadModel({
     modelPath: path.join(
         __dirname,
+        "../",
         "models",
         "Qwen3-1.7B-Q8_0.gguf"
     )

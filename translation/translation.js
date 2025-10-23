@@ -11,6 +11,7 @@ const llama = await getLlama();
 const model = await llama.loadModel({
     modelPath: path.join(
         __dirname,
+        "../",
         "models",
         "hf_giladgd_Apertus-8B-Instruct-2509.Q6_K.gguf"
     )

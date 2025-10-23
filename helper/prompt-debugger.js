@@ -17,7 +17,7 @@ const OutputTypes = {
 export class PromptDebugger {
     constructor(options = {}) {
         this.outputDir = options.outputDir || './';
-        this.filename = options.filename || 'prompt_output.txt';
+        this.filename = options.filename;
         this.includeTimestamp = options.includeTimestamp ?? false;
         this.appendMode = options.appendMode ?? false;
         // Configure which outputs to include

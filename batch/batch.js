@@ -3,13 +3,14 @@ import path from "path";
 import {fileURLToPath} from "url";
 
 /**
- * asynchronous execution is used in GAIA benchmark testing, multi-agent application,
- * and other scenarios where efficiency and throughput are important
+ * Asynchronous execution improves performance in GAIA benchmarks,
+ * multi-agent applications, and other high-throughput scenarios.
  */
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const modelPath = path.join(
     __dirname,
+    "../",
     "models",
     "DeepSeek-R1-0528-Qwen3-8B-Q6_K.gguf"
 )

@@ -1,7 +1,7 @@
 import {defineChatSessionFunction, getLlama, LlamaChatSession} from "node-llama-cpp";
 import {fileURLToPath} from "url";
 import path from "path";
-import {PromptDebugger} from "./helper/prompt-debugger.js";
+import {PromptDebugger} from "../helper/prompt-debugger.js";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const debug = false;
@@ -10,6 +10,7 @@ const llama = await getLlama({debug});
 const model = await llama.loadModel({
     modelPath: path.join(
         __dirname,
+        "../",
         "models",
         "hf_giladgd_gpt-oss-20b.MXFP4.gguf"
     )
