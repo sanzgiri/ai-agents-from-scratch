@@ -309,7 +309,7 @@ Educational resource - use and modify as needed for learning.
 
 ---
 
-**Built with ️ for people who want to truly understand AI agents**
+**Built with ❤️ for people who want to truly understand AI agents**
 
 Start with `intro/` and work your way through. Each example builds on the previous one. Read both CODE.md and CONCEPT.md for full understanding.
 
