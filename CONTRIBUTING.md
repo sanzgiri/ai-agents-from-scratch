@@ -2,7 +2,7 @@
 
 Thank you for considering contributing to AI Agents from Scratch!
 
-## 🎯 Project Philosophy
+## Project Philosophy
 
 This repository teaches AI agent fundamentals by building from scratch. Every contribution should support this learning mission.
 
@@ -12,46 +12,46 @@ This repository teaches AI agent fundamentals by building from scratch. Every co
 - **Progressive learning** - Each example builds on the previous
 - **Local-first** - No API dependencies
 
-## 🤝 Types of Contributions
+## Types of Contributions
 
-### 🐛 Bug Reports
+### Bug Reports
 Found something broken? Open an issue with:
 - Which example (`intro/`, `react-agent/`, etc.)
 - What you expected vs. what happened
 - Your environment (Node version, OS, model used)
 - Steps to reproduce
 
-### 📝 Documentation Improvements
+### Documentation Improvements
 - Typos and grammar fixes
 - Clearer explanations
 - Better code comments
 - Additional examples in documentation
 - Diagrams and visualizations
 
-### 💡 New Examples
+### New Examples
 Want to add a new agent pattern? Great! Please:
 1. **Open an issue first** - let's discuss if it fits
 2. Follow the existing structure:
-    - `pattern-name/pattern-name.js` - Working code
-    - `pattern-name/CODE.md` - Detailed code walkthrough
-    - `pattern-name/CONCEPT.md` - Why it matters, use cases
+- `pattern-name/pattern-name.js` - Working code
+- `pattern-name/CODE.md` - Detailed code walkthrough
+- `pattern-name/CONCEPT.md` - Why it matters, use cases
 3. Keep it simple and well-commented
 4. Test thoroughly with at least one model
 
-### 🔧 Code Improvements
+### Code Improvements
 - Performance optimizations (with benchmarks)
 - Better error handling
 - Clearer variable names
 - More helpful console output
 
-## 🚫 What We're Not Looking For
+## What We're Not Looking For
 
 - Framework integrations (LangChain, etc.) - this repo teaches what they do
 - Cloud API examples - keep it local
 - Production features (monitoring, scaling) - this is educational
 - Complex abstractions - keep it beginner-friendly
 
-## 📋 Contribution Process
+## Contribution Process
 
 1. **Fork** the repository
 2. **Create a branch**: `git checkout -b fix/issue-description`
@@ -59,11 +59,11 @@ Want to add a new agent pattern? Great! Please:
 4. **Commit** with clear messages: `git commit -m "Fix: clarify ReAct loop explanation"`
 5. **Push**: `git push origin fix/issue-description`
 6. **Open a Pull Request** with:
-    - Clear title
-    - Description of what changed and why
-    - Which issue it addresses (if any)
+- Clear title
+- Description of what changed and why
+- Which issue it addresses (if any)
 
-## ✅ Code Standards
+## Code Standards
 
 - Use clear, descriptive variable names
 - Add comments explaining *why*, not just *what*
@@ -71,7 +71,7 @@ Want to add a new agent pattern? Great! Please:
 - Keep examples self-contained (one file when possible)
 - Test with Qwen or Llama models before submitting
 
-## 📚 Documentation Standards
+## Documentation Standards
 
 - Use clear, simple language
 - Explain concepts before code
@@ -79,12 +79,12 @@ Want to add a new agent pattern? Great! Please:
 - Provide real-world use cases
 - Link to related examples
 
-## 🎨 Example Structure
+## Example Structure
 ```
 new-pattern/
-├── new-pattern.js          # The working code
-├── CODE.md                 # Line-by-line walkthrough
-└── CONCEPT.md              # High-level explanation
+├── new-pattern.js # The working code
+├── CODE.md # Line-by-line walkthrough
+└── CONCEPT.md # High-level explanation
 ```
 
 **CODE.md should include:**
@@ -99,20 +99,20 @@ new-pattern/
 - Real-world applications
 - Simple diagrams
 
-## 💬 Getting Help
+## Getting Help
 
 - Not sure if your idea fits? **Open an issue to discuss**
 - Stuck on implementation? **Ask in the issue**
 - Want to pair on something? **Reach out!**
 
-## 📜 License
+## License
 
 By contributing, you agree that your contributions will be licensed under the same license as the project (MIT).
 
-## 🙏 Recognition
+## Recognition
 
 All contributors will be recognized in the README. Thank you for helping others learn!
 
 ---
 
-**Questions?** Open an issue or reach out. Happy to help guide your contribution! 🚀
+**Questions?** Open an issue or reach out. Happy to help guide your contribution! 
