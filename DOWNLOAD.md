@@ -6,6 +6,10 @@ Use `:Q6_K` for a good balance between size and accuracy (recommended default).
 Use `:Q5_K_S` for a smaller model that loads faster and uses less memory, but with slightly lower precision.
 
 ```
+npx --no node-llama-cpp pull --dir ./models hf:Qwen/Qwen3-1.7B-GGUF:Q8_0
+```
+
+```
 npx --no node-llama-cpp pull --dir ./models hf:giladgd/gpt-oss-20b-GGUF/gpt-oss-20b.MXFP4.gguf
 ```
 
