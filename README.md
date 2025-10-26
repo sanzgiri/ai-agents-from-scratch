@@ -1,3 +1,5 @@
+⭐ 600+ Stars in 3 Days. Thanks to the community!
+
 # AI Agents From Scratch
 
 Learn to build AI agents locally without frameworks. Understand what happens under the hood before using production frameworks.
