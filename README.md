@@ -47,6 +47,18 @@ Follow these examples in order to build understanding progressively:
 
 ---
 
+### 2. (Optional) **OpenAI Intro** - Using Proprietary Models
+`openai-intro/` | [Code Explanation](openai-intro/CODE.md) | [Concepts](openai-intro/CONCEPT.md)
+
+**What you'll learn:**
+- How to call hosted LLMs (like GPT-4)
+- Temperature Control
+- Token Usage
+
+**Key concepts**: Inference endpoints, network latency, cost vs control, data privacy, vendor dependence
+
+---
+
 ### 2. **Translation** - System Prompts & Specialization
 `translation/` | [Code Explanation](translation/CODE.md) | [Concepts](translation/CONCEPT.md)
 
