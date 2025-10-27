@@ -61,7 +61,7 @@ Follow these examples in order to build understanding progressively:
 
 ---
 
-### 2. **Translation** - System Prompts & Specialization
+### 3. **Translation** - System Prompts & Specialization
 `translation/` | [Code Explanation](translation/CODE.md) | [Concepts](translation/CONCEPT.md)
 
 **What you'll learn:**
@@ -74,7 +74,7 @@ Follow these examples in order to build understanding progressively:
 
 ---
 
-### 3. **Think** - Reasoning & Problem Solving
+### 4. **Think** - Reasoning & Problem Solving
 `think/` | [Code Explanation](think/CODE.md) | [Concepts](think/CONCEPT.md)
 
 **What you'll learn:**
@@ -87,7 +87,7 @@ Follow these examples in order to build understanding progressively:
 
 ---
 
-### 4. **Batch** - Parallel Processing
+### 5. **Batch** - Parallel Processing
 `batch/` | [Code Explanation](batch/CODE.md) | [Concepts](batch/CONCEPT.md)
 
 **What you'll learn:**
@@ -100,7 +100,7 @@ Follow these examples in order to build understanding progressively:
 
 ---
 
-### 5. **Coding** - Streaming & Response Control
+### 6. **Coding** - Streaming & Response Control
 `coding/` | [Code Explanation](coding/CODE.md) | [Concepts](coding/CONCEPT.md)
 
 **What you'll learn:**
@@ -113,7 +113,7 @@ Follow these examples in order to build understanding progressively:
 
 ---
 
-### 6. **Simple Agent** - Function Calling (Tools)
+### 7. **Simple Agent** - Function Calling (Tools)
 `simple-agent/` | [Code Explanation](simple-agent/CODE.md) | [Concepts](simple-agent/CONCEPT.md)
 
 **What you'll learn:**
@@ -128,7 +128,7 @@ Follow these examples in order to build understanding progressively:
 
 ---
 
-### 7. **Simple Agent with Memory** - Persistent State
+### 8. **Simple Agent with Memory** - Persistent State
 `simple-agent-with-memory/` | [Code Explanation](simple-agent-with-memory/CODE.md) | [Concepts](simple-agent-with-memory/CONCEPT.md)
 
 **What you'll learn:**
@@ -141,7 +141,7 @@ Follow these examples in order to build understanding progressively:
 
 ---
 
-### 8. **ReAct Agent** - Reasoning + Acting
+### 9. **ReAct Agent** - Reasoning + Acting
 `react-agent/` | [Code Explanation](react-agent/CODE.md) | [Concepts](react-agent/CONCEPT.md)
 
 **What you'll learn:**
