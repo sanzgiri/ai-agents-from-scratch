@@ -1,4 +1,4 @@
-⭐ 700+ Stars in 4 Days. Thanks to the community!
+⭐ 800+ Stars in 4 Days. Thanks to the community!
 
 # AI Agents From Scratch
 
