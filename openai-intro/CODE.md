@@ -14,6 +14,13 @@ https://platform.openai.com/api-keys
 
 https://platform.openai.com/settings/organization/billing/overview
 
+### Configure environment variables
+
+```bash
+   cp .env.example .env
+```
+Then edit `.env` and add your actual API key.
+
 ## Setup and Initialization
 
 ```javascript
