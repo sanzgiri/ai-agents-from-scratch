@@ -1,0 +1,48 @@
+name: Test Python Examples
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ['3.9', '3.10', '3.11']
+
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v4
+      with:
+        python-version: ${{ matrix.python-version }}
+    
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+    
+    - name: Check Python syntax
+      run: |
+        python -m py_compile intro/intro.py
+        python -m py_compile openai-intro/openai-intro.py
+        python -m py_compile translation/translation.py
+        python -m py_compile think/think.py
+        python -m py_compile batch/batch.py
+        python -m py_compile coding/coding.py
+        python -m py_compile simple-agent/simple-agent.py
+        python -m py_compile simple-agent-with-memory/simple-agent-with-memory.py
+        python -m py_compile simple-agent-with-memory/memory_manager.py
+        python -m py_compile react-agent/react-agent.py
+        python -m py_compile helper/prompt_debugger.py
+    
+    - name: Test imports
+      run: |
+        python -c "from llama_cpp import Llama; print('llama-cpp-python imported successfully')"
+        python -c "from openai import OpenAI; print('openai imported successfully')"
+        python -c "from dotenv import load_dotenv; print('python-dotenv imported successfully')"

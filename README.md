@@ -17,7 +17,15 @@ This repository teaches you to build AI agents from first principles using **loc
 
 ## Getting Started
 
-### Quick Start
+### 🌐 Quick Start with GitHub Codespaces
+
+The fastest way to try this repository without local setup:
+
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/sanzgiri/ai-agents-from-scratch/codespaces)
+
+See **[CODESPACES.md](CODESPACES.md)** for detailed instructions on running in the cloud.
+
+### 💻 Local Installation
 
 ```bash
 # 1. Clone the repository
@@ -39,7 +47,7 @@ mkdir -p models
 python intro/intro.py
 ```
 
-### Detailed Setup
+### 📚 Detailed Setup
 
 For comprehensive installation instructions including GPU acceleration, troubleshooting, and optimization tips, see **[SETUP.md](SETUP.md)**.
 
