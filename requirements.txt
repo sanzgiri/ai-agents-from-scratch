@@ -1,20 +1,30 @@
 # Python dependencies for AI Agents From Scratch
 # Python 3.8+ required
 
+# ==========================================
+# Core Dependencies
+# ==========================================
+
 # Core LLM library - Python bindings for llama.cpp
+# Note: Installation may require C++ compiler
+# For GPU support (CUDA): CMAKE_ARGS="-DLLAMA_CUBLAS=on" pip install llama-cpp-python
+# For Metal (Mac): CMAKE_ARGS="-DLLAMA_METAL=on" pip install llama-cpp-python
+# For best CPU performance: CMAKE_ARGS="-DLLAMA_BLAS=ON -DLLAMA_BLAS_VENDOR=OpenBLAS" pip install llama-cpp-python
 llama-cpp-python>=0.3.0
 
-# OpenAI API client
+# OpenAI API client for openai-intro examples
 openai>=1.0.0
 
-# Environment variable management
+# Environment variable management (for API keys)
 python-dotenv>=1.0.0
 
-# JSON handling (built-in, but good to note)
-# Standard library: json
-
-# File operations (built-in)
-# Standard library: pathlib, os
-
-# Async operations (built-in)
-# Standard library: asyncio
+# ==========================================
+# Standard Library (No installation needed)
+# ==========================================
+# - json (for data serialization)
+# - pathlib (for file paths)
+# - os (for environment variables)
+# - asyncio (for async operations)
+# - datetime (for timestamps)
+# - sys (for path manipulation)
+# - typing (for type hints)

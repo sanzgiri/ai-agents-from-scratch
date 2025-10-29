@@ -17,15 +17,36 @@ This repository teaches you to build AI agents from first principles using **loc
 
 ## Getting Started
 
-### Prerequisites
-- Python 3.8+
-- At least 8GB RAM (16GB recommended)
-- Download models and place in `./models/` folder, details in [DOWNLOAD.md](DOWNLOAD.md)
+### Quick Start
 
-### Installation
 ```bash
+# 1. Clone the repository
+git clone https://github.com/sanzgiri/ai-agents-from-scratch.git
+cd ai-agents-from-scratch
+
+# 2. Create and activate virtual environment (recommended)
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+# 3. Install dependencies
 pip install -r requirements.txt
+
+# 4. Download models (see DOWNLOAD.md or SETUP.md for details)
+mkdir -p models
+# Download GGUF models to ./models/ directory
+
+# 5. Run your first example
+python intro/intro.py
 ```
+
+### Detailed Setup
+
+For comprehensive installation instructions including GPU acceleration, troubleshooting, and optimization tips, see **[SETUP.md](SETUP.md)**.
+
+### Prerequisites
+- Python 3.8+ (3.10+ recommended)
+- At least 8GB RAM (16GB recommended)
+- GGUF models in `./models/` folder (see [DOWNLOAD.md](DOWNLOAD.md))
 
 ### Run Examples
 ```bash
