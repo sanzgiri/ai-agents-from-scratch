@@ -6,7 +6,7 @@ Learn to build AI agents locally without frameworks. Understand what happens und
 
 ## Purpose
 
-This repository teaches you to build AI agents from first principles using **local LLMs** and **node-llama-cpp**. By working through these examples, you'll understand:
+This repository teaches you to build AI agents from first principles using **local LLMs** and **llama-cpp-python**. By working through these examples, you'll understand:
 
 - How LLMs work at a fundamental level
 - What agents really are (LLM + tools + patterns)
@@ -18,20 +18,20 @@ This repository teaches you to build AI agents from first principles using **loc
 ## Getting Started
 
 ### Prerequisites
-- Node.js 18+
+- Python 3.8+
 - At least 8GB RAM (16GB recommended)
 - Download models and place in `./models/` folder, details in [DOWNLOAD.md](DOWNLOAD.md)
 
 ### Installation
 ```bash
-npm install
+pip install -r requirements.txt
 ```
 
 ### Run Examples
 ```bash
-node intro/intro.js
-node simple-agent/simple-agent.js
-node react-agent/react-agent.js
+python intro/intro.py
+python simple-agent/simple-agent.py
+python react-agent/react-agent.py
 ```
 
 ## Learning Path
@@ -225,7 +225,7 @@ User → LLM → Think → Act → Observe
 ## ️ Helper Utilities
 
 ### PromptDebugger
-`helper/prompt-debugger.js`
+`helper/prompt_debugger.py`
 
 Utility for debugging prompts sent to the LLM. Shows exactly what the model sees, including:
 - System prompts
@@ -233,7 +233,7 @@ Utility for debugging prompts sent to the LLM. Shows exactly what the model sees
 - Conversation history
 - Context state
 
-Usage example in `simple-agent/simple-agent.js`
+Usage example in `simple-agent/simple-agent.py`
 
 ## ️ Project Structure
 
@@ -241,40 +241,40 @@ Usage example in `simple-agent/simple-agent.js`
 ai-agents/
 ├── README.md                          ← You are here
 ├── intro/
-│   ├── intro.js
+│   ├── intro.py
 │   ├── CODE.md
 │   └── CONCEPT.md
 ├── translation/
-│   ├── translation.js
+│   ├── translation.py
 │   ├── CODE.md
 │   └── CONCEPT.md
 ├── think/
-│   ├── think.js
+│   ├── think.py
 │   ├── CODE.md
 │   └── CONCEPT.md
 ├── batch/
-│   ├── batch.js
+│   ├── batch.py
 │   ├── CODE.md
 │   └── CONCEPT.md
 ├── coding/
-│   ├── coding.js
+│   ├── coding.py
 │   ├── CODE.md
 │   └── CONCEPT.md
 ├── simple-agent/
-│   ├── simple-agent.js
+│   ├── simple-agent.py
 │   ├── CODE.md
 │   └── CONCEPT.md
 ├── simple-agent-with-memory/
-│   ├── simple-agent-with-memory.js
-│   ├── memory-manager.js
+│   ├── simple-agent-with-memory.py
+│   ├── memory_manager.py
 │   ├── CODE.md
 │   └── CONCEPT.md
 ├── react-agent/
-│   ├── react-agent.js
+│   ├── react-agent.py
 │   ├── CODE.md
 │   └── CONCEPT.md
 ├── helper/
-│   └── prompt-debugger.js
+│   └── prompt_debugger.py
 ├── models/                             ← Place your GGUF models here
 └── logs/                               ← Debug outputs
 ```
@@ -305,7 +305,7 @@ Now that you understand the fundamentals, frameworks like LangChain, CrewAI, or 
 
 ## Additional Resources
 
-- **node-llama-cpp**: [GitHub](https://github.com/withcatai/node-llama-cpp)
+- **llama-cpp-python**: [GitHub](https://github.com/abetlen/llama-cpp-python)
 - **Model Hub**: [Hugging Face](https://huggingface.co/models?library=gguf)
 - **GGUF Format**: Quantized models for local inference
 

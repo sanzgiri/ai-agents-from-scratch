@@ -1,0 +1,20 @@
+# Python dependencies for AI Agents From Scratch
+# Python 3.8+ required
+
+# Core LLM library - Python bindings for llama.cpp
+llama-cpp-python>=0.3.0
+
+# OpenAI API client
+openai>=1.0.0
+
+# Environment variable management
+python-dotenv>=1.0.0
+
+# JSON handling (built-in, but good to note)
+# Standard library: json
+
+# File operations (built-in)
+# Standard library: pathlib, os
+
+# Async operations (built-in)
+# Standard library: asyncio
